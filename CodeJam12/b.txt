@@ -1,0 +1,27 @@
+#include<stdio.h>
+//#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+	int num = 12345, len = 0, i, j, count = 0;
+	int temp = num;
+	
+	while(temp != 0)
+	{
+		len++;
+		temp = temp / 10;
+	}
+	printf("Length Is : %d\n", len);
+	
+	for(i=1; i<len; i++)
+	{
+		temp = num % (int)pow(10,i);
+		
+		temp = temp * pow(10,len-i) + num / pow(10,i);
+		
+		printf("Temp Is : %d\n", temp);
+	}
+}
