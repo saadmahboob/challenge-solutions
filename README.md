@@ -1,4 +1,4 @@
 VizChallSolution
 ================
 
-My Solutions of Various Programming and Hacking Challanges
+My solutions of various Programming and Hacking Challanges 
